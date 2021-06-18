@@ -9,6 +9,15 @@ buildscript {
 
 plugins {
 	id 'java'
+	id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "Tayyabt120_eagle.view.test"
+    property "sonar.organization", "tayyabt120"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 apply plugin: 'org.springframework.boot'
